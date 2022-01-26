@@ -1,0 +1,128 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "vscode_vibrancy.opacity": 1,
+  "terminal.integrated.rendererType": "dom",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.compactFolders": false,
+  "files.associations": {
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.vue": "vue",
+    "*.js": "javascript"
+  },
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "aligned-multiple",
+      "wrap_line_length": 150,
+      "end_with_newline": false
+    },
+    "prettier": {
+      // 格式化不加分号
+      "semi": false,
+      // 格式化为单引号
+      "singleQuote": true
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "fileheader.customMade": {
+    // 头部注释
+    "Author": "王花花",
+    "Date": "Do not edit",
+    // "LastEditors": "王花花",
+    "LastEditTime": "Do not edit",
+    "Description": "file content"
+    // "FilePath": "Do not edit" // 增加此项配置即可
+  },
+  "fileheader.cursorMode": {
+    // 函数注释
+    "description": "",
+    "param": "params",
+    "return": ""
+  },
+  // 遇到换行符自动换行
+  "fileheader.configObj": {
+    "autoAdd": false, // 不 默认开启自动添加头部注释，当文件没有设置头部注释时保存会自动添加
+    "autoAlready": false, // 不 默认开启
+    "prohibitAutoAdd": ["json", "md"], // 禁止.json .md文件，自动添加头部注释
+    "wideSame": false, // 设置为true开启
+    "wideNum": 13, // 字段长度 默认为13
+    "createHeader": false // 新建文件自动添加头部注释
+  },
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "notebook.kernelProviderAssociations": [],
+  "editor.formatOnSave": false, // 每次保存的时候自动格式化
+  "editor.formatOnPaste": true, // 自动格式化粘贴内容
+  "editor.tabCompletion": "on", // tab 自动补全
+  "editor.codeActionsOnSave": {
+    // 保存时使用 ESLint 修复可修复错误
+    "source.fixAll": true,
+    "source.fixAll.eslint": true // 保存时使用 ESLint 修复可修复错误
+    // "source.fixAll.stylelint": true
+  },
+  // 文件设置
+  "files.eol": "\n", // 默认行尾字符。 git全局配置 git config --global core.autocrlf false
+  // eslint 设置
+  "eslint.alwaysShowStatus": true, // 总是在 VSCode 显示 ESLint 的状态
+  "eslint.probe": [
+    // eslint 校验的语言类型 - 新版
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "tsx"
+  ]
+}
+// 2021-08-16 修改
+/*
+"vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+        "wrap_attributes": "auto",
+    }
+},
+*/
+// 对属性进行换行。
+// - auto: 仅在超出行长度时才对属性进行换行。
+// - force: 对除第一个属性外的其他每个属性进行换行。
+// - force-aligned: 对除第一个属性外的其他每个属性进行换行，并保持对齐。
+// - force-expand-multiline: 对每个属性进行换行。
+// - aligned-multiple: 当超出折行长度时，将属性进行垂直对齐。
+// 2021-10-27 修改  ------------------
+/*
+	"fileheader.customMade": { // 头部注释
+		"Author": "王花花",
+		"Date": "Do not edit",
+		"LastEditors": "huangl",
+		"LastEditTime": "Do not edit",
+		"Description": "file content",
+		"FilePath": "Do not edit" // 增加此项配置即可
+	},
+	"fileheader.cursorMode": { // 函数注释
+		"description": "",
+		"param": "params",
+		"return": ""
+	},
+	"fileheader.configObj": {
+		"autoAdd": true, // 默认开启自动添加头部注释，当文件没有设置头部注释时保存会自动添加
+		"autoAlready": true, // 默认开启
+		"prohibitAutoAdd": [
+			"json",
+			"md"
+		], // 禁止.json .md文件，自动添加头部注释
+		"wideSame": false, // 设置为true开启
+		"wideNum": 13 // 字段长度 默认为13
+	}
+*/
